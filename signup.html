@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In / Create Account</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.min.css" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 800px;
+            height: 500px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            overflow: hidden;
+        }
+
+        .left-panel {
+            background: linear-gradient(135deg, #ff4b2b, #ff416c);
+            color: white;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem;
+            text-align: center;
+        }
+
+        .left-panel .content h3 {
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+
+        .left-panel .content p {
+            font-size: 1rem;
+            margin: 1rem 0;
+        }
+
+        .left-panel .btn.transparent {
+            background-color: transparent;
+            border: 1px solid #fff;
+            color: white;
+            border-radius: 20px;
+            padding: 0.8rem 1.5rem;
+            cursor: pointer;
+        }
+
+        .signin-signup {
+            display: flex;
+            width: 50%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sign-up-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 3rem;
+            width: 100%;
+        }
+
+        .sign-up-form .title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .social-media {
+            display: flex;
+            gap: 10px;
+            margin: 1rem 0;
+        }
+
+        .social-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #eee;
+            font-size: 1.5rem;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .input-field {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        .input-field input {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .btn {
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 20px;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="panel left-panel">
+            <div class="content">
+                <h3>Welcome Back!</h3>
+                <p>To keep connected with us please login with your personal info</p>
+                <a href="signin.html"> <button class="btn transparent">Sign In</button></a>
+            </div>
+        </div>
+
+        <div class="signin-signup">
+            <form action="#" class="sign-up-form">
+                <h2 class="title">Create Account</h2>
+                <div class="social-media">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f">F</i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-google">G</i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in">In</i></a>
+                </div>
+                <p>or use your email for registration</p>
+                <div class="input-field">
+                    <input type="email" placeholder="email" required>
+                </div>
+                <div class="input-field">
+                    <input type="password" placeholder="password" required>
+                </div>
+                <div class="input-field">
+                    <input type="password" placeholder="Re-type password" required>
+                </div>
+                <li>
+                    <button class="btn transparent" id="sign-up-btn">Sign Up</button>
+                    <a href="baru.html"></a>
+                </li>
+            </form>
+        </div>
+    </div>
+    <script>
+        Swal.fire({
+            title: "<strong>HTML <u>example</u></strong>",
+            icon: "info",
+            html: `You can use <b>bold text</b>,
+    <a href="signup.html" autofocus>links</a>,
+    and other HTML tags`,
+            showCloseButton: true,
+            showCancelButton: true,
+            focusConfirm: false,
+            confirmButtonText: `
+    <i class="fa fa-thumbs-up"></i> Great!`,
+            confirmButtonAriaLabel: "Thumbs up, great!",
+            cancelButtonText: `
+    <i class="fa fa-thumbs-down"></i>`,
+            cancelButtonAriaLabel: "Thumbs down"
+        });
+    </script>
+</body>
+
+</html>

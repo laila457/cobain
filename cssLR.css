@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 800px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    overflow: hidden;
+}
+
+.signin-signup {
+    display: flex;
+    width: 100%;
+}
+
+.sign-in-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 0 3rem;
+}
+
+.sign-in-form .title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+    margin: 1rem 0;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #eee;
+    font-size: 1.5rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.input-field {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.forgot {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+    text-decoration: none;
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+.right-panel {
+    background: linear-gradient(135deg, #b3ffab, #12fff7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 3rem;
+    color: white;
+    text-align: center;
+}
+
+.right-panel .content h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.right-panel .content p {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.right-panel .btn.transparent {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
